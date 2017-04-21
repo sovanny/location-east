@@ -27,9 +27,14 @@ html {
     .top-nav-collapse {
         padding-: 0;
     }
-
-
 }
+
+@media (max-width: 768px) {
+    .navbar-nav .logo {
+        display:none;
+    }
+}
+
 
 /* För att centrera grejerna i navbaren*/
 .navbar.center .container {
@@ -59,7 +64,7 @@ html {
 
 }
 /* Så att allt blir lika brett i navbaren*/
-.page-scroll {
+.navbar li{
     width: 150px;
 
 
@@ -70,7 +75,7 @@ html {
 }
 
 .logo{
-    padding: 8px 15px 0 15px;
+    margin: 8px 15px 0 15px;
 }
 
 body{
