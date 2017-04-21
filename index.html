@@ -1,148 +1,229 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
+
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-    <title>Location East</title>
+    <title>Scrolling Nav - Start Bootstrap Template</title>
 
-    <!-- Bootstrap -->
+    <!-- specialfont -->
+    <link href="https://fonts.googleapis.com/css?family=Yanone+Kaffeesatz" rel="stylesheet">
+
+    <!-- Bootstrap Core CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
 
-    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- Custom CSS -->
+    <link href="css/scrolling-nav.css" rel="stylesheet">
+
+
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
-    <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
-    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
 
-    <!-- Custom style -->
-    <link href="style.css" rel="stylesheet">
-
 </head>
-<body>
-<div class="container">
 
+<!-- The #page-top ID is part of the scrolling feature - the data-spy and data-target are part of the built-in Bootstrap scrollspy function -->
 
+<body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
 
-    <div class="page-header">
-        <div id ="brand-logo"></div>
-        <img src="primary.jpg">
+<!-- Navigation -->
+<nav class="navbar navbar-default navbar-custom navbar-fixed-top center" role="navigation">
+    <div class="container">
+        <div class="navbar-header page-scroll">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand page-scroll visible-xs" href="#page-top"><img src="img/logo.png"></a>
+            <!--<a class="navbar-brand page-scroll" href="#page-top">Start Bootstrap</a>-->
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse navbar-ex1-collapse">
+            <ul class="nav navbar-nav">
+                <!-- Hidden li included to remove active class from about link when scrolled up past about section -->
+                <li class="hidden">
+                    <a class="page-scroll" href="#page-top"></a>
+                </li>
+                <li>
+                    <a class="page-scroll" href="#line-up">ARTISTER</a>
+                </li>
+
+                <li>
+                    <a class="page-scroll" href="#podcast">PODCAST</a>
+                </li>
+
+                <li class="logo"><a class="page-scroll" id="logo-img" href="#"><img src="img/logo.png"></a></li>
+
+                <li>
+                    <a class="page-scroll" href="#contact">KONTAKT</a>
+                </li>
+                <li>
+                    <a class="page-scroll" href="#sponsors">SPONSORER</a>
+                </li>
+            </ul>
+        </div>
+        <!-- /.navbar-collapse -->
     </div>
+    <!-- /.container -->
+</nav>
 
-    <div class="row">
-        <div class="col-md-3">Nyheter</div>
-        <div class="col-md-3">Artister</div>
-        <div class="col-md-3">Podcast</div>
-        <div class="col-md-3">Kontakt</div>
-    </div>
+<!-- Intro Section -->
+<section id="intro" class="intro-section">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <!-- <h1>Scrolling Nav</h1>
+                <p><strong>Usage Instructions:</strong> Make sure to include the <code>scrolling-nav.js</code>, <code>jquery.easing.min.js</code>, and <code>scrolling-nav.css</code> files. To make a link smooth scroll to another section on the page, give the link the <code>.page-scroll</code> class and set the link target to a corresponding ID on the page.</p>
+                <a class="btn btn-default page-scroll" href="#contact">Click Me to Scroll Down!</a> -->
+                <h1>Om Festivalen</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque sagittis metus sit amet pellentesque porta. Phasellus dignissim vel odio eu dignissim. Curabitur porttitor hendrerit lorem sit amet finibus. Integer auctor sem sit amet tincidunt semper. Donec aliquam gravida risus id luctus. Etiam convallis venenatis sem eget consequat. Pellentesque eget diam eget ipsum imperdiet aliquet vitae ac dui. In maximus malesuada velit eu mollis. Integer ultricies commodo quam a auctor.
 
-    <h3>Three unequal columns</h3>
-    <p>Get three columns <strong>starting at desktops and scaling to large desktops</strong> of various widths. Remember, grid columns should add up to twelve for a single horizontal block. More than that, and columns start stacking no matter the viewport.</p>
-    <div class="row">
-        <div class="col-md-3">.col-md-3</div>
-        <div class="col-md-6">.col-md-6</div>
-        <div class="col-md-3">.col-md-3</div>
-    </div>
+                    Nullam nisl augue, aliquam ut nisi vitae, fringilla blandit dui. Morbi tristique justo sit amet lacinia viverra. Morbi pretium iaculis enim vel efficitur. Donec fermentum lorem ut purus facilisis, ac posuere augue condimentum. Aenean suscipit nibh risus, vitae vulputate odio fermentum at. Donec condimentum sem ac eros euismod, nec maximus nisi laoreet. Duis a faucibus nibh, malesuada laoreet tortor. Maecenas et dignissim est, non pretium nisl. Etiam nec lectus urna.
+                </p>
 
-    <h3>Two columns</h3>
-    <p>Get two columns <strong>starting at desktops and scaling to large desktops</strong>.</p>
-    <div class="row">
-        <div class="col-md-8">.col-md-8</div>
-        <div class="col-md-4">.col-md-4</div>
-    </div>
+                <img id="colorful" src="colorful2.jpg" class="img-responsive" alt="Responsive image">
 
-    <h3>Full width, single column</h3>
-    <p class="text-warning">No grid classes are necessary for full-width elements.</p>
-
-    <hr>
-
-    <h3>Two columns with two nested columns</h3>
-    <p>Per the documentation, nesting is easy—just put a row of columns within an existing column. This gives you two columns <strong>starting at desktops and scaling to large desktops</strong>, with another two (equal widths) within the larger column.</p>
-    <p>At mobile device sizes, tablets and down, these columns and their nested columns will stack.</p>
-    <div class="row">
-        <div class="col-md-8">
-            .col-md-8
-            <div class="row">
-                <div class="col-md-6">.col-md-6</div>
-                <div class="col-md-6">.col-md-6</div>
             </div>
         </div>
-        <div class="col-md-4">.col-md-4</div>
     </div>
+</section>
 
-    <hr>
+<!-- artister -->
+<section id="line-up" class="line-up-section">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <h1>ARTISTER</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque sagittis metus sit amet pellentesque porta. Phasellus dignissim vel odio eu dignissim. Curabitur porttitor hendrerit lorem sit amet finibus. Integer auctor sem sit amet tincidunt semper. Donec aliquam gravida risus id luctus. Etiam convallis venenatis sem eget consequat. Pellentesque eget diam eget ipsum imperdiet aliquet vitae ac dui. In maximus malesuada velit eu mollis. Integer ultricies commodo quam a auctor.
 
-    <h3>Mixed: mobile and desktop</h3>
-    <p>The Bootstrap 3 grid system has four tiers of classes: xs (phones), sm (tablets), md (desktops), and lg (larger desktops). You can use nearly any combination of these classes to create more dynamic and flexible layouts.</p>
-    <p>Each tier of classes scales up, meaning if you plan on setting the same widths for xs and sm, you only need to specify xs.</p>
-    <div class="row">
-        <div class="col-xs-12 col-md-8">.col-xs-12 .col-md-8</div>
-        <div class="col-xs-6 col-md-4">.col-xs-6 .col-md-4</div>
-    </div>
-    <div class="row">
-        <div class="col-xs-6 col-md-4">.col-xs-6 .col-md-4</div>
-        <div class="col-xs-6 col-md-4">.col-xs-6 .col-md-4</div>
-        <div class="col-xs-6 col-md-4">.col-xs-6 .col-md-4</div>
-    </div>
-    <div class="row">
-        <div class="col-xs-6">.col-xs-6</div>
-        <div class="col-xs-6">.col-xs-6</div>
-    </div>
+                    Nullam nisl augue, aliquam ut nisi vitae, fringilla blandit dui. Morbi tristique justo sit amet lacinia viverra. Morbi pretium iaculis enim vel efficitur. Donec fermentum lorem ut purus facilisis, ac posuere augue condimentum. Aenean suscipit nibh risus, vitae vulputate odio fermentum at. Donec condimentum sem ac eros euismod, nec maximus nisi laoreet. Duis a faucibus nibh, malesuada laoreet tortor. Maecenas et dignissim est, non pretium nisl. Etiam nec lectus urna.
 
-    <hr>
+                    Phasellus egestas, velit dictum tristique posuere, lacus tellus cursus libero, eget tincidunt arcu ante vitae erat. Nam condimentum diam in mauris consectetur tempor. Nulla ipsum libero, porta at nisl eu, volutpat rhoncus lectus. Interdum et malesuada fames ac ante ipsum primis in faucibus. Integer eget nibh sit amet orci finibus hendrerit. Phasellus porta dictum turpis ac iaculis. Sed massa nulla, mattis quis urna nec, molestie pharetra dolor. Integer elit risus, suscipit sed pharetra quis, mollis ultricies tellus. Praesent facilisis ligula luctus, sollicitudin est ac, placerat mi. Etiam vel mauris eu tortor blandit mollis. Nulla pretium venenatis volutpat. Suspendisse elementum urna sit amet cursus blandit.
 
-    <h3>Mixed: mobile, tablet, and desktop</h3>
-    <p></p>
-    <div class="row">
-        <div class="col-xs-12 col-sm-6 col-lg-8">.col-xs-12 .col-sm-6 .col-lg-8</div>
-        <div class="col-xs-6 col-lg-4">.col-xs-6 .col-lg-4</div>
-    </div>
-    <div class="row">
-        <div class="col-xs-6 col-sm-4">.col-xs-6 .col-sm-4</div>
-        <div class="col-xs-6 col-sm-4">.col-xs-6 .col-sm-4</div>
-        <div class="col-xs-6 col-sm-4">.col-xs-6 .col-sm-4</div>
-    </div>
+                    Donec eget lacinia leo. Cras suscipit eros et lectus ultricies, eu eleifend lacus lacinia. Donec ut neque a mi lacinia facilisis eu dictum mauris. Morbi tincidunt scelerisque mattis. Suspendisse potenti. Quisque a finibus turpis. Nulla metus metus, rutrum at arcu ac, sollicitudin eleifend lorem. Etiam dictum erat quis iaculis porta. Aliquam convallis, lacus non finibus maximus, sapien diam sodales odio, quis posuere augue metus vitae est. Duis tincidunt nisi tincidunt, elementum odio quis, fringilla ipsum.
 
-    <hr>
+                    Interdum et malesuada fames ac ante ipsum primis in faucibus. Nulla euismod nec eros at posuere. Praesent tortor lacus, accumsan quis ligula et, rutrum ultrices massa. Cras in quam sed arcu sagittis sollicitudin quis ut neque. Quisque auctor felis in lacus condimentum, eget sollicitudin est commodo. Fusce ultrices, sem quis vulputate faucibus, nulla mauris elementum nibh, vel molestie mauris mauris fringilla urna. Donec dictum scelerisque lacus, quis cursus sapien efficitur ac. Aliquam at tristique felis. Vivamus efficitur massa ut urna hendrerit finibus. Etiam sed blandit turpis. Integer viverra pellentesque augue, rutrum sodales erat rutrum in. Sed egestas, odio nec placerat aliquet, augue erat maximus mi, vel porttitor est arcu non nibh. Maecenas odio nulla, gravida ut condimentum pulvinar, porttitor ut sem. Aliquam posuere, urna sed aliquam pharetra, lacus ligula pretium justo, vel pretium libero odio lacinia enim. Ut interdum mauris ac pharetra Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque sagittis metus sit amet pellentesque porta. Phasellus dignissim vel odio eu dignissim. Curabitur porttitor hendrerit lorem sit amet finibus. Integer auctor sem sit amet tincidunt semper. Donec aliquam gravida risus id luctus. Etiam convallis venenatis sem eget consequat. Pellentesque eget diam eget ipsum imperdiet aliquet vitae ac dui. In maximus malesuada velit eu mollis. Integer ultricies commodo quam a auctor.
+                </p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque sagittis metus sit amet pellentesque porta. Phasellus dignissim vel odio eu dignissim. Curabitur porttitor hendrerit lorem sit amet finibus. Integer auctor sem sit amet tincidunt semper. Donec aliquam gravida risus id luctus. Etiam convallis venenatis sem eget consequat. Pellentesque eget diam eget ipsum imperdiet aliquet vitae ac dui. In maximus malesuada velit eu mollis. Integer ultricies commodo quam a auctor.
 
-    <h3>Column clearing</h3>
-    <p><a href="http://getbootstrap.com/css/#grid-responsive-resets">Clear floats</a> at specific breakpoints to prevent awkward wrapping with uneven content.</p>
-    <div class="row">
-        <div class="col-xs-6 col-sm-3">
-            .col-xs-6 .col-sm-3
-            <br>
-            Resize your viewport or check it out on your phone for an example.
+                    Nullam nisl augue, aliquam ut nisi vitae, fringilla blandit dui. Morbi tristique justo sit amet lacinia viverra. Morbi pretium iaculis enim vel efficitur. Donec fermentum lorem ut purus facilisis, ac posuere augue condimentum. Aenean suscipit nibh risus, vitae vulputate odio fermentum at. Donec condimentum sem ac eros euismod, nec maximus nisi laoreet. Duis a faucibus nibh, malesuada laoreet tortor. Maecenas et dignissim est, non pretium nisl. Etiam nec lectus urna.
+
+                    Phasellus egestas, velit dictum tristique posuere, lacus tellus cursus libero, eget tincidunt arcu ante vitae erat. Nam condimentum diam in mauris consectetur tempor. Nulla ipsum libero, porta at nisl eu, volutpat rhoncus lectus. Interdum et malesuada fames ac ante ipsum primis in faucibus. Integer eget nibh sit amet orci finibus hendrerit. Phasellus porta dictum turpis ac iaculis. Sed massa nulla, mattis quis urna nec, molestie pharetra dolor. Integer elit risus, suscipit sed pharetra quis, mollis ultricies tellus. Praesent facilisis ligula luctus, sollicitudin est ac, placerat mi. Etiam vel mauris eu tortor blandit mollis. Nulla pretium venenatis volutpat. Suspendisse elementum urna sit amet cursus blandit.
+
+                    Donec eget lacinia leo. Cras suscipit eros et lectus ultricies, eu eleifend lacus lacinia. Donec ut neque a mi lacinia facilisis eu dictum mauris. Morbi tincidunt scelerisque mattis. Suspendisse potenti. Quisque a finibus turpis. Nulla metus metus, rutrum at arcu ac, sollicitudin eleifend lorem. Etiam dictum erat quis iaculis porta. Aliquam convallis, lacus non finibus maximus, sapien diam sodales odio, quis posuere augue metus vitae est. Duis tincidunt nisi tincidunt, elementum odio quis, fringilla ipsum.
+
+                    Interdum et malesuada fames ac ante ipsum primis in faucibus. Nulla euismod nec eros at posuere. Praesent tortor lacus, accumsan quis ligula et, rutrum ultrices massa. Cras in quam sed arcu sagittis sollicitudin quis ut neque. Quisque auctor felis in lacus condimentum, eget sollicitudin est commodo. Fusce ultrices, sem quis vulputate faucibus, nulla mauris elementum nibh, vel molestie mauris mauris fringilla urna. Donec dictum scelerisque lacus, quis cursus sapien efficitur ac. Aliquam at tristique felis. Vivamus efficitur massa ut urna hendrerit finibus. Etiam sed blandit turpis. Integer viverra pellentesque augue, rutrum sodales erat rutrum in. Sed egestas, odio nec placerat aliquet, augue erat maximus mi, vel porttitor est arcu non nibh. Maecenas odio nulla, gravida ut condimentum pulvinar, porttitor ut sem. Aliquam posuere, urna sed aliquam pharetra, lacus ligula pretium justo, vel pretium libero odio lacinia enim. Ut interdum mauris ac pharetra Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque sagittis metus sit amet pellentesque porta. Phasellus dignissim vel odio eu dignissim. Curabitur porttitor hendrerit lorem sit amet finibus. Integer auctor sem sit amet tincidunt semper. Donec aliquam gravida risus id luctus. Etiam convallis venenatis sem eget consequat. Pellentesque eget diam eget ipsum imperdiet aliquet vitae ac dui. In maximus malesuada velit eu mollis. Integer ultricies commodo quam a auctor.
+                </p>
+
+            </div>
         </div>
-        <div class="col-xs-6 col-sm-3">.col-xs-6 .col-sm-3</div>
-
-        <!-- Add the extra clearfix for only the required viewport -->
-        <div class="clearfix visible-xs"></div>
-
-        <div class="col-xs-6 col-sm-3">.col-xs-6 .col-sm-3</div>
-        <div class="col-xs-6 col-sm-3">.col-xs-6 .col-sm-3</div>
     </div>
+</section>
 
-    <hr>
+<!-- podcast -->
+<section id="podcast" class="podcast-section">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <h1>PODCAST</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque sagittis metus sit amet pellentesque porta. Phasellus dignissim vel odio eu dignissim. Curabitur porttitor hendrerit lorem sit amet finibus. Integer auctor sem sit amet tincidunt semper. Donec aliquam gravida risus id luctus. Etiam convallis venenatis sem eget consequat. Pellentesque eget diam eget ipsum imperdiet aliquet vitae ac dui. In maximus malesuada velit eu mollis. Integer ultricies commodo quam a auctor.
 
-    <h3>Offset, push, and pull resets</h3>
-    <p>Reset offsets, pushes, and pulls at specific breakpoints.</p>
-    <div class="row">
-        <div class="col-sm-5 col-md-6">.col-sm-5 .col-md-6</div>
-        <div class="col-sm-5 col-sm-offset-2 col-md-6 col-md-offset-0">.col-sm-5 .col-sm-offset-2 .col-md-6 .col-md-offset-0</div>
+                Nullam nisl augue, aliquam ut nisi vitae, fringilla blandit dui. Morbi tristique justo sit amet lacinia viverra. Morbi pretium iaculis enim vel efficitur. Donec fermentum lorem ut purus facilisis, ac posuere augue condimentum. Aenean suscipit nibh risus, vitae vulputate odio fermentum at. Donec condimentum sem ac eros euismod, nec maximus nisi laoreet. Duis a faucibus nibh, malesuada laoreet tortor. Maecenas et dignissim est, non pretium nisl. Etiam nec lectus urna.
+
+                Phasellus egestas, velit dictum tristique posuere, lacus tellus cursus libero, eget tincidunt arcu ante vitae erat. Nam condimentum diam in mauris consectetur tempor. Nulla ipsum libero, porta at nisl eu, volutpat rhoncus lectus. Interdum et malesuada fames ac ante ipsum primis in faucibus. Integer eget nibh sit amet orci finibus hendrerit. Phasellus porta dictum turpis ac iaculis. Sed massa nulla, mattis quis urna nec, molestie pharetra dolor. Integer elit risus, suscipit sed pharetra quis, mollis ultricies tellus. Praesent facilisis ligula luctus, sollicitudin est ac, placerat mi. Etiam vel mauris eu tortor blandit mollis. Nulla pretium venenatis volutpat. Suspendisse elementum urna sit amet cursus blandit.
+
+                Donec eget lacinia leo. Cras suscipit eros et lectus ultricies, eu eleifend lacus lacinia. Donec ut neque a mi lacinia facilisis eu dictum mauris. Morbi tincidunt scelerisque mattis. Suspendisse potenti. Quisque a finibus turpis. Nulla metus metus, rutrum at arcu ac, sollicitudin eleifend lorem. Etiam dictum erat quis iaculis porta. Aliquam convallis, lacus non finibus maximus, sapien diam sodales odio, quis posuere augue metus vitae est. Duis tincidunt nisi tincidunt, elementum odio quis, fringilla ipsum.
+
+                Interdum et malesuada fames ac ante ipsum primis in faucibus. Nulla euismod nec eros at posuere. Praesent tortor lacus, accumsan quis ligula et, rutrum ultrices massa. Cras in quam sed arcu sagittis sollicitudin quis ut neque. Quisque auctor felis in lacus condimentum, eget sollicitudin est commodo. Fusce ultrices, sem quis vulputate faucibus, nulla mauris elementum nibh, vel molestie mauris mauris fringilla urna. Donec dictum scelerisque lacus, quis cursus sapien efficitur ac. Aliquam at tristique felis. Vivamus efficitur massa ut urna hendrerit finibus. Etiam sed blandit turpis. Integer viverra pellentesque augue, rutrum sodales erat rutrum in. Sed egestas, odio nec placerat aliquet, augue erat maximus mi, vel porttitor est arcu non nibh. Maecenas odio nulla, gravida ut condimentum pulvinar, porttitor ut sem. Aliquam posuere, urna sed aliquam pharetra, lacus ligula pretium justo, vel pretium libero odio lacinia enim. Ut interdum mauris ac pharetra Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque sagittis metus sit amet pellentesque porta. Phasellus dignissim vel odio eu dignissim. Curabitur porttitor hendrerit lorem sit amet finibus. Integer auctor sem sit amet tincidunt semper. Donec aliquam gravida risus id luctus. Etiam convallis venenatis sem eget consequat. Pellentesque eget diam eget ipsum imperdiet aliquet vitae ac dui. In maximus malesuada velit eu mollis. Integer ultricies commodo quam a auctor.
+                </p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque sagittis metus sit amet pellentesque porta. Phasellus dignissim vel odio eu dignissim. Curabitur porttitor hendrerit lorem sit amet finibus. Integer auctor sem sit amet tincidunt semper. Donec aliquam gravida risus id luctus. Etiam convallis venenatis sem eget consequat. Pellentesque eget diam eget ipsum imperdiet aliquet vitae ac dui. In maximus malesuada velit eu mollis. Integer ultricies commodo quam a auctor.
+
+                    Nullam nisl augue, aliquam ut nisi vitae, fringilla blandit dui. Morbi tristique justo sit amet lacinia viverra. Morbi pretium iaculis enim vel efficitur. Donec fermentum lorem ut purus facilisis, ac posuere augue condimentum. Aenean suscipit nibh risus, vitae vulputate odio fermentum at. Donec condimentum sem ac eros euismod, nec maximus nisi laoreet. Duis a faucibus nibh, malesuada laoreet tortor. Maecenas et dignissim est, non pretium nisl. Etiam nec lectus urna.
+
+                    Phasellus egestas, velit dictum tristique posuere, lacus tellus cursus libero, eget tincidunt arcu ante vitae erat. Nam condimentum diam in mauris consectetur tempor. Nulla ipsum libero, porta at nisl eu, volutpat rhoncus lectus. Interdum et malesuada fames ac ante ipsum primis in faucibus. Integer eget nibh sit amet orci finibus hendrerit. Phasellus porta dictum turpis ac iaculis. Sed massa nulla, mattis quis urna nec, molestie pharetra dolor. Integer elit risus, suscipit sed pharetra quis, mollis ultricies tellus. Praesent facilisis ligula luctus, sollicitudin est ac, placerat mi. Etiam vel mauris eu tortor blandit mollis. Nulla pretium venenatis volutpat. Suspendisse elementum urna sit amet cursus blandit.
+
+                    Donec eget lacinia leo. Cras suscipit eros et lectus ultricies, eu eleifend lacus lacinia. Donec ut neque a mi lacinia facilisis eu dictum mauris. Morbi tincidunt scelerisque mattis. Suspendisse potenti. Quisque a finibus turpis. Nulla metus metus, rutrum at arcu ac, sollicitudin eleifend lorem. Etiam dictum erat quis iaculis porta. Aliquam convallis, lacus non finibus maximus, sapien diam sodales odio, quis posuere augue metus vitae est. Duis tincidunt nisi tincidunt, elementum odio quis, fringilla ipsum.
+
+                    Interdum et malesuada fames ac ante ipsum primis in faucibus. Nulla euismod nec eros at posuere. Praesent tortor lacus, accumsan quis ligula et, rutrum ultrices massa. Cras in quam sed arcu sagittis sollicitudin quis ut neque. Quisque auctor felis in lacus condimentum, eget sollicitudin est commodo. Fusce ultrices, sem quis vulputate faucibus, nulla mauris elementum nibh, vel molestie mauris mauris fringilla urna. Donec dictum scelerisque lacus, quis cursus sapien efficitur ac. Aliquam at tristique felis. Vivamus efficitur massa ut urna hendrerit finibus. Etiam sed blandit turpis. Integer viverra pellentesque augue, rutrum sodales erat rutrum in. Sed egestas, odio nec placerat aliquet, augue erat maximus mi, vel porttitor est arcu non nibh. Maecenas odio nulla, gravida ut condimentum pulvinar, porttitor ut sem. Aliquam posuere, urna sed aliquam pharetra, lacus ligula pretium justo, vel pretium libero odio lacinia enim. Ut interdum mauris ac pharetra Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque sagittis metus sit amet pellentesque porta. Phasellus dignissim vel odio eu dignissim. Curabitur porttitor hendrerit lorem sit amet finibus. Integer auctor sem sit amet tincidunt semper. Donec aliquam gravida risus id luctus. Etiam convallis venenatis sem eget consequat. Pellentesque eget diam eget ipsum imperdiet aliquet vitae ac dui. In maximus malesuada velit eu mollis. Integer ultricies commodo quam a auctor.
+                </p>
+
+
+            </div>
+        </div>
     </div>
-    <div class="row">
-        <div class="col-sm-6 col-md-5 col-lg-6">.col-sm-6 .col-md-5 .col-lg-6</div>
-        <div class="col-sm-6 col-md-5 col-md-offset-2 col-lg-6 col-lg-offset-0">.col-sm-6 .col-md-5 .col-md-offset-2 .col-lg-6 .col-lg-offset-0</div>
+</section>
+
+<!-- kontakt -->
+<section id="contact" class="contact-section">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <h1>KONTAKT</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque sagittis metus sit amet pellentesque porta. Phasellus dignissim vel odio eu dignissim. Curabitur porttitor hendrerit lorem sit amet finibus. Integer auctor sem sit amet tincidunt semper. Donec aliquam gravida risus id luctus. Etiam convallis venenatis sem eget consequat. Pellentesque eget diam eget ipsum imperdiet aliquet vitae ac dui. In maximus malesuada velit eu mollis. Integer ultricies commodo quam a auctor.
+
+                    Nullam nisl augue, aliquam ut nisi vitae, fringilla blandit dui. Morbi tristique justo sit amet lacinia viverra. Morbi pretium iaculis enim vel efficitur. Donec fermentum lorem ut purus facilisis, ac posuere augue condimentum. Aenean suscipit nibh risus, vitae vulputate odio fermentum at. Donec condimentum sem ac eros euismod, nec maximus nisi laoreet. Duis a faucibus nibh, malesuada laoreet tortor. Maecenas et dignissim est, non pretium nisl. Etiam nec lectus urna.
+
+                    Phasellus egestas, velit dictum tristique posuere, lacus tellus cursus libero, eget tincidunt arcu ante vitae erat. Nam condimentum diam in mauris consectetur tempor. Nulla ipsum libero, porta at nisl eu, volutpat rhoncus lectus. Interdum et malesuada fames ac ante ipsum primis in faucibus. Integer eget nibh sit amet orci finibus hendrerit. Phasellus porta dictum turpis ac iaculis. Sed massa nulla, mattis quis urna nec, molestie pharetra dolor. Integer elit risus, suscipit sed pharetra quis, mollis ultricies tellus. Praesent facilisis ligula luctus, sollicitudin est ac, placerat mi. Etiam vel mauris eu tortor blandit mollis. Nulla pretium venenatis volutpat. Suspendisse elementum urna sit amet cursus blandit.
+
+                    Donec eget lacinia leo. Cras suscipit eros et lectus ultricies, eu eleifend lacus lacinia. Donec ut neque a mi lacinia facilisis eu dictum mauris. Morbi tincidunt scelerisque mattis. Suspendisse potenti. Quisque a finibus turpis. Nulla metus metus, rutrum at arcu ac, sollicitudin eleifend lorem. Etiam dictum erat quis iaculis porta. Aliquam convallis, lacus non finibus maximus, sapien diam sodales odio, quis posuere augue metus vitae est. Duis tincidunt nisi tincidunt, elementum odio quis, fringilla ipsum.
+
+                    Interdum et malesuada fames ac ante ipsum primis in faucibus. Nulla euismod nec eros at posuere. Praesent tortor lacus, accumsan quis ligula et, rutrum ultrices massa. Cras in quam sed arcu sagittis sollicitudin quis ut neque. Quisque auctor felis in lacus condimentum, eget sollicitudin est commodo. Fusce ultrices, sem quis vulputate faucibus, nulla mauris elementum nibh, vel molestie mauris mauris fringilla urna. Donec dictum scelerisque lacus, quis cursus sapien efficitur ac. Aliquam at tristique felis. Vivamus efficitur massa ut urna hendrerit finibus. Etiam sed blandit turpis. Integer viverra pellentesque augue, rutrum sodales erat rutrum in. Sed egestas, odio nec placerat aliquet, augue erat maximus mi, vel porttitor est arcu non nibh. Maecenas odio nulla, gravida ut condimentum pulvinar, porttitor ut sem. Aliquam posuere, urna sed aliquam pharetra, lacus ligula pretium justo, vel pretium libero odio lacinia enim. Ut interdum mauris ac pharetra Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque sagittis metus sit amet pellentesque porta. Phasellus dignissim vel odio eu dignissim. Curabitur porttitor hendrerit lorem sit amet finibus. Integer auctor sem sit amet tincidunt semper. Donec aliquam gravida risus id luctus. Etiam convallis venenatis sem eget consequat. Pellentesque eget diam eget ipsum imperdiet aliquet vitae ac dui. In maximus malesuada velit eu mollis. Integer ultricies commodo quam a auctor.
+                </p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque sagittis metus sit amet pellentesque porta. Phasellus dignissim vel odio eu dignissim. Curabitur porttitor hendrerit lorem sit amet finibus. Integer auctor sem sit amet tincidunt semper. Donec aliquam gravida risus id luctus. Etiam convallis venenatis sem eget consequat. Pellentesque eget diam eget ipsum imperdiet aliquet vitae ac dui. In maximus malesuada velit eu mollis. Integer ultricies commodo quam a auctor.
+
+                    Nullam nisl augue, aliquam ut nisi vitae, fringilla blandit dui. Morbi tristique justo sit amet lacinia viverra. Morbi pretium iaculis enim vel efficitur. Donec fermentum lorem ut purus facilisis, ac posuere augue condimentum. Aenean suscipit nibh risus, vitae vulputate odio fermentum at. Donec condimentum sem ac eros euismod, nec maximus nisi laoreet. Duis a faucibus nibh, malesuada laoreet tortor. Maecenas et dignissim est, non pretium nisl. Etiam nec lectus urna.
+
+                    Phasellus egestas, velit dictum tristique posuere, lacus tellus cursus libero, eget tincidunt arcu ante vitae erat. Nam condimentum diam in mauris consectetur tempor. Nulla ipsum libero, porta at nisl eu, volutpat rhoncus lectus. Interdum et malesuada fames ac ante ipsum primis in faucibus. Integer eget nibh sit amet orci finibus hendrerit. Phasellus porta dictum turpis ac iaculis. Sed massa nulla, mattis quis urna nec, molestie pharetra dolor. Integer elit risus, suscipit sed pharetra quis, mollis ultricies tellus. Praesent facilisis ligula luctus, sollicitudin est ac, placerat mi. Etiam vel mauris eu tortor blandit mollis. Nulla pretium venenatis volutpat. Suspendisse elementum urna sit amet cursus blandit.
+
+                    Donec eget lacinia leo. Cras suscipit eros et lectus ultricies, eu eleifend lacus lacinia. Donec ut neque a mi lacinia facilisis eu dictum mauris. Morbi tincidunt scelerisque mattis. Suspendisse potenti. Quisque a finibus turpis. Nulla metus metus, rutrum at arcu ac, sollicitudin eleifend lorem. Etiam dictum erat quis iaculis porta. Aliquam convallis, lacus non finibus maximus, sapien diam sodales odio, quis posuere augue metus vitae est. Duis tincidunt nisi tincidunt, elementum odio quis, fringilla ipsum.
+
+                    Interdum et malesuada fames ac ante ipsum primis in faucibus. Nulla euismod nec eros at posuere. Praesent tortor lacus, accumsan quis ligula et, rutrum ultrices massa. Cras in quam sed arcu sagittis sollicitudin quis ut neque. Quisque auctor felis in lacus condimentum, eget sollicitudin est commodo. Fusce ultrices, sem quis vulputate faucibus, nulla mauris elementum nibh, vel molestie mauris mauris fringilla urna. Donec dictum scelerisque lacus, quis cursus sapien efficitur ac. Aliquam at tristique felis. Vivamus efficitur massa ut urna hendrerit finibus. Etiam sed blandit turpis. Integer viverra pellentesque augue, rutrum sodales erat rutrum in. Sed egestas, odio nec placerat aliquet, augue erat maximus mi, vel porttitor est arcu non nibh. Maecenas odio nulla, gravida ut condimentum pulvinar, porttitor ut sem. Aliquam posuere, urna sed aliquam pharetra, lacus ligula pretium justo, vel pretium libero odio lacinia enim. Ut interdum mauris ac pharetra Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque sagittis metus sit amet pellentesque porta. Phasellus dignissim vel odio eu dignissim. Curabitur porttitor hendrerit lorem sit amet finibus. Integer auctor sem sit amet tincidunt semper. Donec aliquam gravida risus id luctus. Etiam convallis venenatis sem eget consequat. Pellentesque eget diam eget ipsum imperdiet aliquet vitae ac dui. In maximus malesuada velit eu mollis. Integer ultricies commodo quam a auctor.
+                </p>
+            </div>
+        </div>
     </div>
+</section>
 
+<!-- sponsorer -->
+<section id="sponsors" class="sponsors-section">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <h1>SPONSORER</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque sagittis metus sit amet pellentesque porta. Phasellus dignissim vel odio eu dignissim. Curabitur porttitor hendrerit lorem sit amet finibus. Integer auctor sem sit amet tincidunt semper. Donec aliquam gravida risus id luctus. Etiam convallis venenatis sem eget consequat. Pellentesque eget diam eget ipsum imperdiet aliquet vitae ac dui. In maximus malesuada velit eu mollis. Integer ultricies commodo quam a auctor.
 
-</div> <!-- /container -->
+                    Nullam nisl augue, aliquam ut nisi vitae, fringilla blandit dui. Morbi tristique justo sit amet lacinia viverra. Morbi pretium iaculis enim vel efficitur. Donec fermentum lorem ut purus facilisis, ac posuere augue condimentum. Aenean suscipit nibh risus, vitae vulputate odio fermentum at. Donec condimentum sem ac eros euismod, nec maximus nisi laoreet. Duis a faucibus nibh, malesuada laoreet tortor. Maecenas et dignissim est, non pretium nisl. Etiam nec lectus urna.
 
-<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-<!-- Include all compiled plugins (below), or include individual files as needed -->
+                    Phasellus egestas, velit dictum tristique posuere, lacus tellus cursus libero, eget tincidunt arcu ante vitae erat. Nam condimentum diam in mauris consectetur tempor. Nulla ipsum libero, porta at nisl eu, volutpat rhoncus lectus. Interdum et malesuada fames ac ante ipsum primis in faucibus. Integer eget nibh sit amet orci finibus hendrerit. Phasellus porta dictum turpis ac iaculis. Sed massa nulla, mattis quis urna nec, molestie pharetra dolor. Integer elit risus, suscipit sed pharetra quis, mollis ultricies tellus. Praesent facilisis ligula luctus, sollicitudin est ac, placerat mi. Etiam vel mauris eu tortor blandit mollis. Nulla pretium venenatis volutpat. Suspendisse elementum urna sit amet cursus blandit.
+
+                    Donec eget lacinia leo. Cras suscipit eros et lectus ultricies, eu eleifend lacus lacinia. Donec ut neque a mi lacinia facilisis eu dictum mauris. Morbi tincidunt scelerisque mattis. Suspendisse potenti. Quisque a finibus turpis. Nulla metus metus, rutrum at arcu ac, sollicitudin eleifend lorem. Etiam dictum erat quis iaculis porta. Aliquam convallis, lacus non finibus maximus, sapien diam sodales odio, quis posuere augue metus vitae est. Duis tincidunt nisi tincidunt, elementum odio quis, fringilla ipsum.
+
+                    Interdum et malesuada fames ac ante ipsum primis in faucibus. Nulla euismod nec eros at posuere. Praesent tortor lacus, accumsan quis ligula et, rutrum ultrices massa. Cras in quam sed arcu sagittis sollicitudin quis ut neque. Quisque auctor felis in lacus condimentum, eget sollicitudin est commodo. Fusce ultrices, sem quis vulputate faucibus, nulla mauris elementum nibh, vel molestie mauris mauris fringilla urna. Donec dictum scelerisque lacus, quis cursus sapien efficitur ac. Aliquam at tristique felis. Vivamus efficitur massa ut urna hendrerit finibus. Etiam sed blandit turpis. Integer viverra pellentesque augue, rutrum sodales erat rutrum in. Sed egestas, odio nec placerat aliquet, augue erat maximus mi, vel porttitor est arcu non nibh. Maecenas odio nulla, gravida ut condimentum pulvinar, porttitor ut sem. Aliquam posuere, urna sed aliquam pharetra, lacus ligula pretium justo, vel pretium libero odio lacinia enim. Ut interdum mauris ac pharetra Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque sagittis metus sit amet pellentesque porta. Phasellus dignissim vel odio eu dignissim. Curabitur porttitor hendrerit lorem sit amet finibus. Integer auctor sem sit amet tincidunt semper. Donec aliquam gravida risus id luctus. Etiam convallis venenatis sem eget consequat. Pellentesque eget diam eget ipsum imperdiet aliquet vitae ac dui. In maximus malesuada velit eu mollis. Integer ultricies commodo quam a auctor.
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- jQuery -->
+<script src="js/jquery.js"></script>
+
+<!-- Bootstrap Core JavaScript -->
 <script src="js/bootstrap.min.js"></script>
+
+<!-- Scrolling Nav JavaScript -->
+<script src="js/jquery.easing.min.js"></script>
+<script src="js/scrolling-nav.js"></script>
+
 </body>
+
 </html>
