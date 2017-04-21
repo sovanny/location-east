@@ -35,6 +35,10 @@ html {
     }
 }
 
+.navbar-brand{
+    text-align: center;
+}
+
 
 /* För att centrera grejerna i navbaren*/
 .navbar.center .container {
