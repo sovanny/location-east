@@ -63,7 +63,7 @@ html {
 
 .navbar-nav a{
 
-    font-family: 'Yanone Kaffeesatz', sans-serif;
+    font-family: 'Roboto Mono', monospace;
     font-size: x-large;
 
 }
@@ -83,57 +83,53 @@ html {
 }
 
 body{
-    font-family: 'Yanone Kaffeesatz', sans-serif;
+    font-family: 'Roboto Mono', monospace;
 
 }
-h1{
-    font-size: 55px;
-}
-p{
-    font-size: 25px;
-}
-#colorful{
-    width: 100vw;
+
+#sponsorlogos{
+    margin: 25px;
 }
 
 /* Demo Sections - You can use these as guides or delete them - the scroller will work with any sort of height, fixed, undefined, or percentage based.
 The padding is very important to make sure the scrollspy picks up the right area when scrolled to. Adjust the margin and padding of sections and children 
 of those sections to manage the look and feel of the site. */
 
+
+section h1{
+    text-align: center;
+    background: #fff;
+}
 .intro-section {
     padding-top: 100px;
     text-align: center;
-    background: #fff;
     padding-bottom: 25px;
 }
 
 .line-up-section {
     padding-top: 150px;
-    text-align: center;
-    background: #eee;
     padding-bottom: 25px;
 }
 
 .podcast-section {
     padding-top: 150px;
-    text-align: center;
-    background: #fff;
     padding-bottom: 25px;
 }
 
 .contact-section {
     padding-top: 150px;
-    text-align: center;
-    background: #eee;
     padding-bottom: 25px;
 }
 
 .sponsors-section {
     padding-top: 150px;
-    text-align: center;
-    background: #fff;
     padding-bottom: 25px;
 }
+
+.line-up-section .portfolio-item{
+    padding-bottom: 20px;
+}
+
 
 /* NAVBAR CUSTOM COLORS https://work.smarchal.com/twbscolor/css/ffffffcdcfd0000000ffa6161 */
 .navbar-default {
