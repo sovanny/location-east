@@ -98,8 +98,10 @@ The padding is very important to make sure the scrollspy picks up the right area
 of those sections to manage the look and feel of the site. */
 
 body{
-    background: url("poster.png");
+    background: url("bakgrund.png");
     background-attachment: fixed;
+    background-size:     cover;                      /* <------ */
+    background-repeat:   no-repeat;
 }
 section h1{
     text-align: center;
