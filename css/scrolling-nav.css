@@ -241,4 +241,7 @@ section h2{
         color: #f7a423;
         background-color: #3b3d3d;
     }
+    body {
+        background-position: right;
+    }
 }
