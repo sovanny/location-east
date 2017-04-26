@@ -25,7 +25,7 @@ html {
     }
 
     .top-nav-collapse {
-        padding-: 0;
+        padding: 0;
     }
 }
 
@@ -64,7 +64,7 @@ html {
 .navbar-nav a{
 
     font-family: 'Roboto Mono', monospace;
-    font-size: x-large;
+    font-size: large;
 
 }
 /* Så att allt blir lika brett i navbaren*/
@@ -78,8 +78,10 @@ html {
     padding: 0 0 0 0;
 }
 
-.logo{
+li.logo{
     margin: 8px 15px 0 15px;
+    width: 180px;
+
 }
 
 body{
@@ -101,7 +103,15 @@ body{
 }
 section h1{
     text-align: center;
+    font-size: 50px;
+    font-weight: bolder;
 }
+
+section h2{
+    text-align: center;
+}
+
+
 .intro-section {
     padding-top: 100px;
     text-align: center;
@@ -134,98 +144,98 @@ section h1{
 }
 
 #logga1{
-    width: 150px;
+    width: 180px;
 }
 #logga2{
-    width: 150px;
+    width: 180px;
 }
 /* NAVBAR CUSTOM COLORS https://work.smarchal.com/twbscolor/css/ffffffcdcfd0000000ffa6161 */
 .navbar-default {
     background-color: #202121;
-    border-color: #202121;
+    border-color: #3b3d3d;
 }
 .navbar-default .navbar-brand {
-    color: #fff;
+    color: #ffffff;
 }
 .navbar-default .navbar-brand:hover,
 .navbar-default .navbar-brand:focus {
-    color: #ffa616;
+    color: #f7a423;
 }
 .navbar-default .navbar-text {
-    color: #fff;
+    color: #ffffff;
 }
 .navbar-default .navbar-nav > li > a {
-    color: #fff;
+    color: #ffffff;
 }
 .navbar-default .navbar-nav > li > a:hover,
 .navbar-default .navbar-nav > li > a:focus {
-    color: #ffa616;
+    color: #f7a423;
 }
 .navbar-default .navbar-nav > li > .dropdown-menu {
     background-color: #202121;
 }
 .navbar-default .navbar-nav > li > .dropdown-menu > li > a {
-    color: #fff;
+    color: #ffffff;
 }
 .navbar-default .navbar-nav > li > .dropdown-menu > li > a:hover,
 .navbar-default .navbar-nav > li > .dropdown-menu > li > a:focus {
-    color: #ffa616;
-    background-color: #cdcfd0;
+    color: #f7a423;
+    background-color: #3b3d3d;
 }
 .navbar-default .navbar-nav > li > .dropdown-menu > li > .divider {
-    background-color: #cdcfd0;
+    background-color: #3b3d3d;
 }
 .navbar-default .navbar-nav .open .dropdown-menu > .active > a,
 .navbar-default .navbar-nav .open .dropdown-menu > .active > a:hover,
 .navbar-default .navbar-nav .open .dropdown-menu > .active > a:focus {
-    color: #ffa616;
-    background-color: #cdcfd0;
+    color: #f7a423;
+    background-color: #3b3d3d;
 }
 .navbar-default .navbar-nav > .active > a,
 .navbar-default .navbar-nav > .active > a:hover,
 .navbar-default .navbar-nav > .active > a:focus {
-    color: #ffa616;
-    background-color: #cdcfd0;
+    color: #f7a423;
+    background-color: #3b3d3d;
 }
 .navbar-default .navbar-nav > .open > a,
 .navbar-default .navbar-nav > .open > a:hover,
 .navbar-default .navbar-nav > .open > a:focus {
-    color: #ffa616;
-    background-color: #cdcfd0;
+    color: #f7a423;
+    background-color: #3b3d3d;
 }
 .navbar-default .navbar-toggle {
-    border-color: #202121;
+    border-color: #3b3d3d;
 }
 .navbar-default .navbar-toggle:hover,
 .navbar-default .navbar-toggle:focus {
-    background-color: #cdcfd0;
+    background-color: #3b3d3d;
 }
 .navbar-default .navbar-toggle .icon-bar {
-    background-color: #fff;
+    background-color: #ffffff;
 }
 .navbar-default .navbar-collapse,
 .navbar-default .navbar-form {
-    border-color: #202121;
+    border-color: #ffffff;
 }
 .navbar-default .navbar-link {
-    color: #fff;
+    color: #ffffff;
 }
 .navbar-default .navbar-link:hover {
-    color: #ffa616;
+    color: #f7a423;
 }
 
 @media (max-width: 767px) {
     .navbar-default .navbar-nav .open .dropdown-menu > li > a {
-        color: #fff;
+        color: #ffffff;
     }
     .navbar-default .navbar-nav .open .dropdown-menu > li > a:hover,
     .navbar-default .navbar-nav .open .dropdown-menu > li > a:focus {
-        color: #ffa616;
+        color: #f7a423;
     }
     .navbar-default .navbar-nav .open .dropdown-menu > .active > a,
     .navbar-default .navbar-nav .open .dropdown-menu > .active > a:hover,
     .navbar-default .navbar-nav .open .dropdown-menu > .active > a:focus {
-        color: #ffa616;
-        background-color: #cdcfd0;
+        color: #f7a423;
+        background-color: #3b3d3d;
     }
 }
