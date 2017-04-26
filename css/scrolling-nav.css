@@ -155,7 +155,7 @@ section h2{
 /* NAVBAR CUSTOM COLORS https://work.smarchal.com/twbscolor/css/ffffffcdcfd0000000ffa6161 */
 .navbar-default {
     background-color: #202121;
-    border-color: #3b3d3d;
+    border-color: #202121;
 }
 .navbar-default .navbar-brand {
     color: #ffffff;
@@ -207,7 +207,7 @@ section h2{
     background-color: #3b3d3d;
 }
 .navbar-default .navbar-toggle {
-    border-color: #3b3d3d;
+    border-color: #202121;
 }
 .navbar-default .navbar-toggle:hover,
 .navbar-default .navbar-toggle:focus {
@@ -218,7 +218,7 @@ section h2{
 }
 .navbar-default .navbar-collapse,
 .navbar-default .navbar-form {
-    border-color: #ffffff;
+    border-color: #202121;
 }
 .navbar-default .navbar-link {
     color: #ffffff;
