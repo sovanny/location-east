@@ -27,6 +27,16 @@ html {
     .top-nav-collapse {
         padding: 0;
     }
+
+    .intro-section p{
+        margin-right: 15%;
+        margin-left: 15%;
+    }
+
+    .intro-section h1{
+        margin-right: 10%;
+        margin-left: 10%;
+    }
 }
 
 @media (max-width: 768px) {
@@ -89,6 +99,11 @@ body{
 
 }
 
+body p{
+    font-family: 'Roboto', monospace;
+    font-size: medium;
+}
+
 #sponsorlogos{
     margin: 25px;
 }
@@ -127,9 +142,15 @@ section h2{
     padding-bottom: 25px;
 }
 
+
 .podcast-section {
     padding-top: 150px;
+
     padding-bottom: 25px;
+}
+.podcast-section p{
+    text-align: center;
+
 }
 
 .contact-section {
