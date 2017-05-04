@@ -37,6 +37,16 @@ html {
         margin-right: 10%;
         margin-left: 10%;
     }
+
+
+    .podcast-section .row{
+        margin-right: 10%;
+        margin-left: 10%;
+    }
+    .contact-section .row{
+        margin-right: 10%;
+        margin-left: 10%;
+    }
 }
 
 @media (max-width: 768px) {
@@ -167,6 +177,14 @@ section h2{
     padding-bottom: 20px;
 }
 
+#centercnmema img{
+    display: block;
+    margin: auto;
+        width: 250px;
+}
+
+#sensus{
+}
 #logga1{
     width: 180px;
 }
