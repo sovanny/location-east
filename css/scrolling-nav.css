@@ -162,7 +162,15 @@ section h2{
     text-align: center;
 
 }
+.contact-section h3{
+    text-align: center;
 
+}
+
+#storlogga{
+
+    max-width: 100%;
+}
 .contact-section {
     padding-top: 150px;
     padding-bottom: 25px;
@@ -181,6 +189,11 @@ section h2{
     display: block;
     margin: auto;
         width: 250px;
+}
+#centerTBA img{
+    display: block;
+    margin: auto;
+        width: 500px;
 }
 
 #sensus{
