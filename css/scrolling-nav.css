@@ -185,10 +185,11 @@ section h2{
     padding-bottom: 20px;
 }
 
-#centercnmema img{
+#sponsorlogos img{
     display: block;
     margin: auto;
         width: 250px;
+    padding-bottom: 25px;
 }
 #centerTBA img{
     display: block;
@@ -196,7 +197,9 @@ section h2{
         width: 500px;
 }
 
-#sensus{
+#hemkop{
+    padding-top: 90px;
+    paddding-bottom: 90px;
 }
 #logga1{
     width: 180px;
