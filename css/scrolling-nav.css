@@ -5,10 +5,18 @@
  */
 
 body {
+    background: url("Bakgrund.png") no-repeat fixed;
+    background-size: cover; /* <------ */
+    background-position-y: 50px;
     width: 100%;
     height: 100%;
     color: #fff;
+    font-family: 'Roboto Mono', monospace;
+}
 
+body p {
+    font-family: 'Roboto', monospace;
+    font-size: medium;
 }
 
 html {
@@ -16,34 +24,34 @@ html {
     height: 100%;
 }
 
-@media(min-width:767px) {
+@media (min-width: 767px) {
     .navbar {
         padding: 20px 0;
-        -webkit-transition: background .5s ease-in-out,padding .5s ease-in-out;
-        -moz-transition: background .5s ease-in-out,padding .5s ease-in-out;
-        transition: background .5s ease-in-out,padding .5s ease-in-out;
+        -webkit-transition: background .5s ease-in-out, padding .5s ease-in-out;
+        -moz-transition: background .5s ease-in-out, padding .5s ease-in-out;
+        transition: background .5s ease-in-out, padding .5s ease-in-out;
     }
 
     .top-nav-collapse {
         padding: 0;
     }
 
-    .intro-section p{
+    .intro-section p {
         margin-right: 15%;
         margin-left: 15%;
     }
 
-    .intro-section h1{
+    .intro-section h1 {
         margin-right: 10%;
         margin-left: 10%;
     }
 
-
-    .podcast-section .row{
+    .podcast-section .row {
         margin-right: 10%;
         margin-left: 10%;
     }
-    .contact-section .row{
+
+    .contact-section .row {
         margin-right: 10%;
         margin-left: 10%;
     }
@@ -51,94 +59,69 @@ html {
 
 @media (max-width: 768px) {
     .navbar-nav .logo {
-        display:none;
+        display: none;
     }
 }
 
-.navbar-brand{
+.navbar-brand {
     text-align: center;
 }
-
 
 /* För att centrera grejerna i navbaren*/
 .navbar.center .container {
     text-align: center;
 }
+
 .navbar.center .container .nav {
     float: none;
-    display:inline-block;
+    display: inline-block;
     vertical-align: top;
 
 }
 
-.navbar-nav{
+.navbar-nav {
 
     vert-align: middle;
 
 }
 
-.navbar-custom a{
+.navbar-custom a {
     color: black;
 }
 
-.navbar-nav a{
+.navbar-nav a {
 
     font-family: 'Roboto Mono', monospace;
     font-size: large;
 
 }
+
 /* Så att allt blir lika brett i navbaren*/
-.navbar li{
+.navbar li {
     width: 150px;
 
-
 }
 
-#logo-img{
-    padding: 0 0 0 0;
-}
 
-li.logo{
+
+li.logo {
     margin: 8px 15px 0 15px;
     width: 180px;
 
 }
 
-body{
-    font-family: 'Roboto Mono', monospace;
 
-}
+/* Sections - the padding-top: 150px makes the scrollspy lands on the correct position*/
 
-body p{
-    font-family: 'Roboto', monospace;
-    font-size: medium;
-}
-
-#sponsorlogos{
-    margin: 25px;
-}
-
-/* Demo Sections - You can use these as guides or delete them - the scroller will work with any sort of height, fixed, undefined, or percentage based.
-The padding is very important to make sure the scrollspy picks up the right area when scrolled to. Adjust the margin and padding of sections and children 
-of those sections to manage the look and feel of the site. */
-
-body{
-    background: url("Bakgrund.png");
-    background-attachment: fixed;
-    background-size:     cover;                      /* <------ */
-    background-repeat:   no-repeat;
-    background-position-y: 50px;
-}
-section h1{
+section h1 {
     text-align: center;
     font-size: 50px;
     font-weight: bolder;
 }
 
-section h2{
+section h2 {
     text-align: center;
 }
-
 
 .intro-section {
     padding-top: 100px;
@@ -152,25 +135,22 @@ section h2{
     padding-bottom: 25px;
 }
 
-
 .podcast-section {
     padding-top: 150px;
 
     padding-bottom: 25px;
 }
-.podcast-section p{
+
+.podcast-section p {
     text-align: center;
 
 }
-.contact-section h3{
+
+.contact-section h3 {
     text-align: center;
 
 }
 
-#storlogga{
-
-    max-width: 100%;
-}
 .contact-section {
     padding-top: 150px;
     padding-bottom: 25px;
@@ -181,103 +161,137 @@ section h2{
     padding-bottom: 25px;
 }
 
-.line-up-section .portfolio-item{
+.line-up-section .portfolio-item {
     padding-bottom: 20px;
 }
 
-#sponsorlogos img{
-    display: block;
-    margin: auto;
-        width: 250px;
-    padding-bottom: 25px;
-}
-#centerTBA img{
-    display: block;
-    margin: auto;
-        width: 500px;
+#logga1 {
+    width: 180px;
 }
 
-#hemkop{
-    padding-top: 90px;
-    paddding-bottom: 90px;
+#logo-img {
+    padding: 0 0 0 0;
 }
-#logga1{
+
+#logga2 {
     width: 180px;
 }
-#logga2{
-    width: 180px;
+
+#bigger {
+    font-size: 20px;
 }
+
+#storlogga {
+
+    max-width: 100%;
+}
+
+#sponsorlogos {
+    margin: 25px;
+}
+
+#sponsorlogos img {
+    display: block;
+    margin: auto;
+    width: 250px;
+    padding-bottom: 25px;
+}
+
+
+#hemkop {
+    padding-top: 40%;
+}
+
+
 /* NAVBAR CUSTOM COLORS https://work.smarchal.com/twbscolor/css/ffffffcdcfd0000000ffa6161 */
 .navbar-default {
     background-color: #202121;
     border-color: #202121;
 }
+
 .navbar-default .navbar-brand {
     color: #ffffff;
 }
+
 .navbar-default .navbar-brand:hover,
 .navbar-default .navbar-brand:focus {
     color: #f7a423;
 }
+
 .navbar-default .navbar-text {
     color: #ffffff;
 }
+
 .navbar-default .navbar-nav > li > a {
     color: #ffffff;
 }
+
 .navbar-default .navbar-nav > li > a:hover,
 .navbar-default .navbar-nav > li > a:focus {
     color: #f7a423;
 }
+
 .navbar-default .navbar-nav > li > .dropdown-menu {
     background-color: #202121;
 }
+
 .navbar-default .navbar-nav > li > .dropdown-menu > li > a {
     color: #ffffff;
 }
+
 .navbar-default .navbar-nav > li > .dropdown-menu > li > a:hover,
 .navbar-default .navbar-nav > li > .dropdown-menu > li > a:focus {
     color: #f7a423;
     background-color: #3b3d3d;
 }
+
 .navbar-default .navbar-nav > li > .dropdown-menu > li > .divider {
     background-color: #3b3d3d;
 }
+
 .navbar-default .navbar-nav .open .dropdown-menu > .active > a,
 .navbar-default .navbar-nav .open .dropdown-menu > .active > a:hover,
 .navbar-default .navbar-nav .open .dropdown-menu > .active > a:focus {
     color: #f7a423;
     background-color: #3b3d3d;
 }
+
 .navbar-default .navbar-nav > .active > a,
 .navbar-default .navbar-nav > .active > a:hover,
 .navbar-default .navbar-nav > .active > a:focus {
     color: #f7a423;
     background-color: #3b3d3d;
 }
+
 .navbar-default .navbar-nav > .open > a,
 .navbar-default .navbar-nav > .open > a:hover,
 .navbar-default .navbar-nav > .open > a:focus {
     color: #f7a423;
     background-color: #3b3d3d;
 }
+
 .navbar-default .navbar-toggle {
     border-color: #202121;
 }
+
 .navbar-default .navbar-toggle:hover,
 .navbar-default .navbar-toggle:focus {
     background-color: #3b3d3d;
 }
+
 .navbar-default .navbar-toggle .icon-bar {
     background-color: #ffffff;
 }
+
 .navbar-default .navbar-collapse,
 .navbar-default .navbar-form {
     border-color: #202121;
 }
+
 .navbar-default .navbar-link {
     color: #ffffff;
 }
+
 .navbar-default .navbar-link:hover {
     color: #f7a423;
 }
@@ -286,16 +300,19 @@ section h2{
     .navbar-default .navbar-nav .open .dropdown-menu > li > a {
         color: #ffffff;
     }
+
     .navbar-default .navbar-nav .open .dropdown-menu > li > a:hover,
     .navbar-default .navbar-nav .open .dropdown-menu > li > a:focus {
         color: #f7a423;
     }
+
     .navbar-default .navbar-nav .open .dropdown-menu > .active > a,
     .navbar-default .navbar-nav .open .dropdown-menu > .active > a:hover,
     .navbar-default .navbar-nav .open .dropdown-menu > .active > a:focus {
         color: #f7a423;
         background-color: #3b3d3d;
     }
+
     body {
         background-position: right;
     }
